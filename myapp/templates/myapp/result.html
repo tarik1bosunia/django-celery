@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %} Result Page {% endblock title %}
+
+{% block content %}    
+
+<h1>Result Page</h1>
+<hr /> 
+
+{% if result2 %}
+<p>Task ID: {{result2}}</p>
+<p>Task ID: {{result2.id}}</p>
+<p>Task ID: {{result2.task_id}}</p>
+<p>Task state: {{result2.state}}</p>
+<p>Task status: {{result2.status}}</p>
+<p>Task result: {{result2.result}}</p>
+{% endif %}
+
+{% endblock content %}

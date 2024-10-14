@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} Home Page {% endblock title %}
+
+{% block content %}    
+
+<h1>Home Page</h1>
+<hr /> 
+
+{% if result2.id %}
+<p>Task ID: {{ result2.id }}</p>
+<a href="{% url 'check_result' task_id=result2.id %}">Check Task Result</a>
+{% endif %}
+{% endblock content %}
